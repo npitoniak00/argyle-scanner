@@ -1,0 +1,157 @@
+{
+	"interfaces":{
+		"primary authentication": {
+			"required components": [
+				{
+					"identifier type":"id",
+					"identifier name":"login_username",
+					"action":"populate input",
+					"value":"{upwork_uname}"
+				},
+				{
+					"identifier type":"id",
+					"identifier name":"login_password_continue",
+					"action":"click"
+				},
+				{
+					"identifier type":"id",
+					"identifier name":"login_password",
+					"action":"populate input",
+					"value":"{upwork_pword}"
+				},
+				{
+					"identifier type":"id",
+					"identifier name":"login_control_continue",
+					"action":"click"
+				}
+			]
+		},
+		"secondary authentication": {
+			"required components": [
+				{
+					"identifier type":"id",
+					"identifier name":"deviceAuth_answer",
+					"action":"populate input",
+					"value":"{upwork_secondary_auth_answer}"
+				},
+				{
+					"identifier type":"id",
+					"identifier name":"control_save",
+					"action":"click"
+				}
+			]
+		},
+		"secondary authentication variant": {
+			"required components": [
+				{
+					"identifier type":"id",
+					"identifier name":"login_deviceAuthorization_answer",
+					"action":"populate input",
+					"value":"sharon"
+				},
+				{
+					"identifier type":"id",
+					"identifier name":"login_control_continue",
+					"action":"click"
+				}
+			]
+		},
+                "profile settings": {
+                        "required components": [
+				{
+					"identifier type":"class",
+					"identifier name":"cfe-ui-profile-identity",
+					"action":"read"
+				}
+			]
+                },
+                "main portal": {
+                        "required components": [
+				{
+					"identifier type":"class",
+					"identifier name":"fwh-my-category-link",
+					"action":"read"
+				},
+				{
+					"identifier type":"text",
+					"identifier name":"View Profile",
+					"action":"click"
+				}
+			]
+                },
+                "contact info": {
+                        "required components": [
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"userId",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"userName",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"userEmail",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"timezone",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"addressStreet",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"addressCity",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"addressState",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"addressZip",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"addressCountry",
+					"action":"read"
+				},
+				{
+					"identifier type":"obscure text",
+					"identifier name":"",
+					"custom attr name":"data-test",
+					"custom attr value":"phone",
+					"action":"read"
+				}
+			]
+                }
+	}
+}
